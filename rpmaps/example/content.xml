@@ -1,0 +1,164 @@
+<net.rptools.maptool.util.PersistenceUtil_-PersistedMap>
+  <zone>
+    <creationTime>1567388681561</creationTime>
+    <id>
+      <baGUID>0474VPuARfWJfcAlZEvsRg==</baGUID>
+    </id>
+    <grid class="net.rptools.maptool.model.SquareGrid">
+      <offsetX>0</offsetX>
+      <offsetY>0</offsetY>
+      <size>50</size>
+      <zone reference="../.."/>
+      <cellShape>
+      </cellShape>
+    </grid>
+    <gridColor>-16777216</gridColor>
+    <imageScaleX>1.0</imageScaleX>
+    <imageScaleY>1.0</imageScaleY>
+    <tokenVisionDistance>1000</tokenVisionDistance>
+    <unitsPerCell>5.0</unitsPerCell>
+    <drawables class="linked-list">
+      <net.rptools.maptool.model.drawing.DrawnElement>
+        <drawable class="net.rptools.maptool.model.drawing.ShapeDrawable">
+          <id>
+            <baGUID>EtDzzoRgQ7K1HFaWnFusDg==</baGUID>
+          </id>
+          <layer>TOKEN</layer>
+          <shape class="java.awt.Rectangle">
+            <x>0</x>
+            <y>-1</y>
+            <width>709</width>
+            <height>453</height>
+          </shape>
+          <useAntiAliasing>false</useAntiAliasing>
+        </drawable>
+        <pen>
+          <foregroundMode>0</foregroundMode>
+          <paint class="net.rptools.maptool.model.drawing.DrawableColorPaint">
+            <color>-16777216</color>
+          </paint>
+          <backgroundMode>0</backgroundMode>
+          <backgroundPaint class="net.rptools.maptool.model.drawing.DrawableColorPaint">
+            <color>-1</color>
+          </backgroundPaint>
+          <thickness>3.0</thickness>
+          <eraser>true</eraser>
+          <squareCap>false</squareCap>
+          <opacity>1.0</opacity>
+          <color>0</color>
+          <backgroundColor>0</backgroundColor>
+        </pen>
+      </net.rptools.maptool.model.drawing.DrawnElement>
+      <net.rptools.maptool.model.drawing.DrawnElement>
+        <drawable class="net.rptools.maptool.model.drawing.ShapeDrawable">
+          <id>
+            <baGUID>9e65QsWbReOaYrxUQmhoiQ==</baGUID>
+          </id>
+          <layer>TOKEN</layer>
+          <shape class="java.awt.Rectangle">
+            <x>-407</x>
+            <y>-497</y>
+            <width>2533</width>
+            <height>2614</height>
+          </shape>
+          <useAntiAliasing>false</useAntiAliasing>
+        </drawable>
+        <pen>
+          <foregroundMode>0</foregroundMode>
+          <paint class="net.rptools.maptool.model.drawing.DrawableColorPaint">
+            <color>-16777216</color>
+          </paint>
+          <backgroundMode>0</backgroundMode>
+          <backgroundPaint class="net.rptools.maptool.model.drawing.DrawableColorPaint">
+            <color>-1</color>
+          </backgroundPaint>
+          <thickness>3.0</thickness>
+          <eraser>true</eraser>
+          <squareCap>false</squareCap>
+          <opacity>1.0</opacity>
+          <color>0</color>
+          <backgroundColor>0</backgroundColor>
+        </pen>
+      </net.rptools.maptool.model.drawing.DrawnElement>
+      <net.rptools.maptool.model.drawing.DrawnElement>
+        <drawable class="net.rptools.maptool.model.drawing.ShapeDrawable">
+          <id>
+            <baGUID>iOLs8zEKQ1a5IzuEtvQrNw==</baGUID>
+          </id>
+          <layer>TOKEN</layer>
+          <shape class="java.awt.Rectangle">
+            <x>-1319</x>
+            <y>-782</y>
+            <width>4267</width>
+            <height>3486</height>
+          </shape>
+          <useAntiAliasing>false</useAntiAliasing>
+        </drawable>
+        <pen>
+          <foregroundMode>0</foregroundMode>
+          <paint class="net.rptools.maptool.model.drawing.DrawableColorPaint">
+            <color>-16777216</color>
+          </paint>
+          <backgroundMode>0</backgroundMode>
+          <backgroundPaint class="net.rptools.maptool.model.drawing.DrawableColorPaint">
+            <color>-1</color>
+          </backgroundPaint>
+          <thickness>3.0</thickness>
+          <eraser>true</eraser>
+          <squareCap>false</squareCap>
+          <opacity>1.0</opacity>
+          <color>0</color>
+          <backgroundColor>0</backgroundColor>
+        </pen>
+      </net.rptools.maptool.model.drawing.DrawnElement>
+    </drawables>
+    <gmDrawables class="linked-list"/>
+    <objectDrawables class="linked-list"/>
+    <backgroundDrawables class="linked-list"/>
+    <labels class="linked-hash-map"/>
+    <tokenMap/>
+    <exposedAreaMeta/>
+    <tokenOrderedList class="linked-list"/>
+    <initiativeList>
+      <tokens/>
+      <current>-1</current>
+      <round>-1</round>
+      <zoneId reference="../../id"/>
+      <fullUpdate>false</fullUpdate>
+      <hideNPC>false</hideNPC>
+    </initiativeList>
+    <exposedArea>
+      <curves/>
+    </exposedArea>
+    <hasFog>false</hasFog>
+    <fogPaint class="net.rptools.maptool.model.drawing.DrawableColorPaint">
+      <color>-16777216</color>
+    </fogPaint>
+    <topology>
+    </topology>
+    <backgroundPaint class="net.rptools.maptool.model.drawing.DrawableColorPaint">
+      <color>-13421773</color>
+    </backgroundPaint>
+    <mapAsset>
+      <id>b7a0ca8992fbfb17ab05b69eda4052ab</id>
+    </mapAsset>
+    <boardPosition>
+      <x>0</x>
+      <y>0</y>
+    </boardPosition>
+    <drawBoard>true</drawBoard>
+    <boardChanged>false</boardChanged>
+    <name>Import 29 of Character_Testing</name>
+    <isVisible>true</isVisible>
+    <visionType>OFF</visionType>
+    <tokenSelection>PC</tokenSelection>
+    <height>0</height>
+    <width>0</width>
+  </zone>
+  <assetMap>
+    <entry>
+      <net.rptools.lib.MD5Key reference="../../../zone/mapAsset"/>
+      <null/>
+    </entry>
+  </assetMap>
+</net.rptools.maptool.util.PersistenceUtil_-PersistedMap>

@@ -1,0 +1,25 @@
+*** here is how the VB coords system is represented in the map contents.xml
+
+<sun.awt.geom.Order0>
+    <direction>1</direction>
+    <x>700.0</x> -- This is the origin point for the shape that is being drawn
+    <y>62.0</y>
+  </sun.awt.geom.Order0>
+  <sun.awt.geom.Order1>
+    <direction>1</direction> -- Not exactly sure what the line is, but this is the left hand vertical line of a square
+    <x0>700.0</x0> -- coords for the first of 2 points of the line
+    <y0>62.0</y0>
+    <x1>700.0</x1> -- coords for the second point, Xs are equal so its a vertical line down
+    <y1>281.0</y1>
+    <xmin>700.0</xmin> -- dunno what this part is about yet
+    <xmax>700.0</xmax>
+  </sun.awt.geom.Order1>
+  <sun.awt.geom.Order1> -- line # 2, since it is a square, this one will go to the right
+    <direction>-1</direction> -- this direction helps keep the square straight, connecting and filling the shape in order, else it looks "twisted"
+    <x0>843.0</x0> -- coords for the next point on the line. difference between this and the first is the width of the box
+    <y0>62.0</y0> -- notice y is the same as origin, in this case its the top right point
+    <x1>843.0</x1>
+    <y1>281.0</y1> --this is the right side vertical line.
+    <xmin>843.0</xmin>
+    <xmax>843.0</xmax>
+  </sun.awt.geom.Order1>
