@@ -33,5 +33,5 @@ def CreateSquares(processedImgArray, squareSize):
   return boxArray
 
 
-# print(CreateSquares(ProcessImage("samples/dungeon.png", 5)))
+# print(CreateSquares(ProcessImage("samples/dungeon.png", 5),5))
 
