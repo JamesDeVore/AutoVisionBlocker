@@ -5,75 +5,86 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 from process import ProcessImage
 
-coords = ProcessImage("samples/dungeon.png",5)
 
-#anywhere there is a 1, its a "hit"
-# print(coords)
-#what I need to do is find the first hit, and search all adjacent pixels
+def analyzeImage(pathToImage, resolution):
+  coords = ProcessImage(pathToImage,resolution)
 
-#need a same size matrix of all zeroes
-matrix = np.zeros((coords.shape[0]+1, coords.shape[1]+1))
-def minimum(a,b,c):
-  l = min(a,b)
-  return min(l,c)
-print(minimum(4,7,2))
+  def minimum(a,b,c):
+    l = min(a,b)
+    return min(l,c)
+  print(minimum(4,7,2))
 
-def maxSize(arr,startingCoord):
-  result = np.zeros(arr.shape)
-  maxVal = 0
-  x = int(startingCoord[0])
-  y = int(startingCoord[1])
-  # arr = arr[x:,y:]
-  try:
-    startingVal = arr[startingCoord[0], startingCoord[1]]
-  except Exception as e:
-    return None
-  for i in range(x,len(arr)):
-    result[i][0] = arr[i][0]
-    if result[i][0] == 1:
-      maxVal = 1
-  for i in range(y, len(arr[0])):
-    result[0][i] = arr[0][i]
-    if result[0][i] == 1:
-      maxVal = 1
-  
-  for i in range(x,len(arr)):
-    for j in range(y,len(arr[i])):
-      if arr[i][j] == 0 or arr[i][j] == 0.5:
+  def maxSize(arr,startingCoord):
+    result = np.zeros(arr.shape)
+    maxVal = 0
+    x = int(startingCoord[0])
+    y = int(startingCoord[1])
+    # arr = arr[x:,y:]
+    try:
+      startingVal = arr[startingCoord[0], startingCoord[1]]
+    except Exception as e:
+      return None
+    for i in range(x,len(arr)):
+      result[i][0] = arr[i][0]
+      if result[i][0] == 1:
+        maxVal = 1
+    for i in range(y, len(arr[0])):
+      result[0][i] = arr[0][i]
+      if result[0][i] == 1:
+        maxVal = 1
+    
+    for i in range(x,len(arr)):
+      for j in range(y,len(arr[i])):
+        if arr[i][j] == 0 or arr[i][j] == 0.5:
+          break
+        t = minimum(result[i-1][j], result[i-1][j-1], result[i][j-1])
+        result[i][j] = t + 1
+        if result[i][j] > maxVal:
+          maxVal = result[i][j]
+
+    x1 = int(x + maxVal)
+    y1 = int(y + maxVal)
+    if np.any(coords[x:x1,y:y1] == 0):
+      return None
+    coords[x:x1,y:y1] = 0.5
+    # plt.imshow(coords, cmap='Greys_r')
+    # plt.show()
+    return (x,y,x1,y1)
+
+
+  coordsArray = np.where(coords == 1.0)
+  listOfCoordinates = list(zip(coordsArray[0], coordsArray[1]))
+  # coords[0,:] = 1
+  # coords[:, 0] = 1
+  blackPixelsLeft = np.any(coords == 1.0)
+  results = []
+  while blackPixelsLeft:
+    for val in listOfCoordinates:
+      if coords[val[0],val[1]] != 1.0:
         continue
-      t = minimum(result[i-1][j], result[i-1][j-1], result[i][j-1])
-      result[i][j] = t + 1
-      if result[i][j] > maxVal:
-        maxVal = result[i][j]
+      res = maxSize(coords,val)
+      # print(res)
+      if res is not None:
+        results.append(res)
+        print(res)
 
-  x1 = int(x + maxVal)
-  y1 = int(y + maxVal)
-  if np.any(coords[x:x1,y:y1] == 0):
-    return None
-  coords[x:x1,y:y1] = 0.5
-  plt.imshow(coords, cmap='Greys_r')
-  plt.show()
-  return (x,y,x1,y1)
+    print(results,len(results))
+    # plt.imshow(coords, cmap='Greys_r')
+    # plt.show()
+    blackPixelsLeft = np.any(coords == 1.0)
 
 
-coords[0,:] = 1
-coords[:, 0] = 1
-blackPixelsLeft = np.any(coords == 1.0)
-results = []
-
-
-coordsArray = np.where(coords == 1.0)
-listOfCoordinates = list(zip(coordsArray[0], coordsArray[1]))
-for index,val in enumerate(listOfCoordinates):
-  if coords[val[0],val[1]] != 1.0:
-    continue
-  res = maxSize(coords,val)
-  # print(res)
-  if res is not None:
-    results.append(res)
-print(results)
-plt.imshow(coords, cmap='Greys_r')
-plt.show()
+  returnData = []
+  print(results)
+  for x0,y0,x1,y1 in results:
+    tempDict = {
+        'dX': y1,
+        'dY': x1,
+        'originX': y0,
+        'originY': x0
+    }
+    returnData.append(tempDict)
+  return returnData
 
 
 
