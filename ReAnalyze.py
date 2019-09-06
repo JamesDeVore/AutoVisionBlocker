@@ -64,7 +64,7 @@ def CreateSquares(processedImgArray, squareSize):
           largestXMap[xVal - squareSize].append((y0, y1))
         except Exception as e:
           largestXMap[xVal - squareSize] = [(y0, y1)]
-        print(xVal,y0, y1)
+        # print(xVal,y0, y1)
         continue
     for xs,lists in originMap.items():
       if len(lists) > 0:
