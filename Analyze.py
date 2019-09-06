@@ -37,8 +37,12 @@ def analyzeImage(pathToImage, resolution):
       for j in range(y,len(arr[i])):
         if arr[i][j] == 0 or arr[i][j] == 0.5:
           break
+          plt.imshow(arr, cmap='Greys_r')
+          plt.show()
         t = minimum(result[i-1][j], result[i-1][j-1], result[i][j-1])
         result[i][j] = t + 1
+        arr[i][j] = 0.5
+        
         if result[i][j] > maxVal:
           maxVal = result[i][j]
 
@@ -47,8 +51,7 @@ def analyzeImage(pathToImage, resolution):
     if np.any(coords[x:x1,y:y1] == 0):
       return None
     coords[x:x1,y:y1] = 0.5
-    # plt.imshow(coords, cmap='Greys_r')
-    # plt.show()
+
     return (x,y,x1,y1)
 
 
@@ -86,7 +89,7 @@ def analyzeImage(pathToImage, resolution):
     returnData.append(tempDict)
   return returnData
 
-
+# analyzeImage("samples/forest.png",1)
 
 
 
