@@ -167,16 +167,6 @@
       </entry>
       <entry>
         <net.rptools.maptool.model.GUID>
-          <baGUID>dQdS1M06RqCncWBkOHb4Rw==</baGUID>
-        </net.rptools.maptool.model.GUID>
-        <net.rptools.maptool.model.ExposedAreaMetaData>
-          <exposedAreaHistory>
-            <curves/>
-          </exposedAreaHistory>
-        </net.rptools.maptool.model.ExposedAreaMetaData>
-      </entry>
-      <entry>
-        <net.rptools.maptool.model.GUID>
           <baGUID>7mCA5y5mRAWZ6cxsBY9fbg==</baGUID>
         </net.rptools.maptool.model.GUID>
         <net.rptools.maptool.model.ExposedAreaMetaData>
@@ -416,50 +406,44 @@
       <curves>
         <sun.awt.geom.Order0>
           <direction>1</direction>
-          <x>87.0</x>
-          <y>57.0</y>
+          <x>906.7369012922883</x>
+          <y>344.32399964095873</y>
         </sun.awt.geom.Order0>
         <sun.awt.geom.Order1>
           <direction>1</direction>
-          <x0>87.0</x0>
-          <y0>57.0</y0>
-          <x1>87.0</x1>
-          <y1>59.0</y1>
-          <xmin>87.0</xmin>
-          <xmax>87.0</xmax>
-        </sun.awt.geom.Order1>
-        <sun.awt.geom.Order1>
-          <direction>-1</direction>
-          <x0>160.0</x0>
-          <y0>57.0</y0>
-          <x1>160.0</x1>
-          <y1>59.0</y1>
-          <xmin>160.0</xmin>
-          <xmax>160.0</xmax>
-        </sun.awt.geom.Order1>
-        
-        <sun.awt.geom.Order0>
-          <direction>1</direction>
-          <x>87.0</x>
-          <y>57.0</y>
-        </sun.awt.geom.Order0>
-        <sun.awt.geom.Order1>
-          <direction>-1</direction>
-          <x0>87.0</x0>
-          <y0>57.0</y0>
-          <x1>87.0</x1>
-          <y1>59.0</y1>
-          <xmin>87.0</xmin>
-          <xmax>87.0</xmax>
+          <x0>906.7369012922883</x0>
+          <y0>344.32399964095873</y0>
+          <x1>905.2630987077117</x1>
+          <y1>345.67600035904127</y1>
+          <xmin>905.2630987077117</xmin>
+          <xmax>906.7369012922883</xmax>
         </sun.awt.geom.Order1>
         <sun.awt.geom.Order1>
           <direction>1</direction>
-          <x0>160.0</x0>
-          <y0>57.0</y0>
-          <x1>160.0</x1>
-          <y1>59.0</y1>
-          <xmin>160.0</xmin>
-          <xmax>160.0</xmax>
+          <x0>905.2630987077117</x0>
+          <y0>345.67600035904127</y0>
+          <x1>1016.2630987077117</x1>
+          <y1>466.67600035904127</y1>
+          <xmin>905.2630987077117</xmin>
+          <xmax>1016.2630987077117</xmax>
+        </sun.awt.geom.Order1>
+        <sun.awt.geom.Order1>
+          <direction>-1</direction>
+          <x0>1017.7369012922883</x0>
+          <y0>465.32399964095873</y0>
+          <x1>1016.2630987077117</x1>
+          <y1>466.67600035904127</y1>
+          <xmin>1016.2630987077117</xmin>
+          <xmax>1017.7369012922883</xmax>
+        </sun.awt.geom.Order1>
+        <sun.awt.geom.Order1>
+          <direction>-1</direction>
+          <x0>906.7369012922883</x0>
+          <y0>344.32399964095873</y0>
+          <x1>1017.7369012922883</x1>
+          <y1>465.32399964095873</y1>
+          <xmin>906.7369012922883</xmin>
+          <xmax>1017.7369012922883</xmax>
         </sun.awt.geom.Order1>
       </curves>
     </topology>
@@ -478,7 +462,7 @@
     <name>Character_Testing</name>
     <isVisible>true</isVisible>
     <visionType>OFF</visionType>
-    <tokenSelection>PC</tokenSelection>
+    <tokenSelection>ALL</tokenSelection>
     <height>0</height>
     <width>0</width>
   </zone>
