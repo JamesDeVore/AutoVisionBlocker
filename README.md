@@ -8,5 +8,5 @@ Make sure the image works in maptool. I don't know why some .png images work and
 ### MapMaker.py
 On the bottom of the file you will see ``` makeMap("samples/forest.png",'forestMap') ```. Change them to the path to the image, and the desired filename respectively. You will then run the script and if all goes well your map will be in the output directory. :)
 Here it is in action!
-![pre](./images/pre.png)
-![post](./images/post.png)
+![pre](images/pre.png)
+![post](images/post.png)
