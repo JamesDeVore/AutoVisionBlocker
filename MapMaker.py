@@ -59,10 +59,10 @@ def makeMap(pathToOriginalImg,name):
   #lets get the image coords array
   #first you need to pre process
   # countedArray = analyzeImage(pathToOriginalImg, 5)
-  raw_array = ProcessImage(pathToOriginalImg, 5)
-  countedArray = CreateSquares(raw_array, 5)
+  raw_array = ProcessImage(pathToOriginalImg, 2)
+  countedArray = CreateSquares(raw_array, 3)
   thisMap = Map(image=img, VBCoords = countedArray)
   thisMap.make_file('output/ ' + name + '.zip')
   thisMap.make_file('output/ ' + name + '.rpmap')
 
-makeMap("samples/forest.png",'forestMap')
+makeMap("samples/forest.png",'consolidated')
