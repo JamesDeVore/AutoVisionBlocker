@@ -65,4 +65,4 @@ def makeMap(pathToOriginalImg,name):
   thisMap.make_file('output/ ' + name + '.zip')
   thisMap.make_file('output/ ' + name + '.rpmap')
 
-makeMap("samples/forest.png",'consolidated')
+makeMap("samples/dungeon2.png",'consolidated2')
